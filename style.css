@@ -1,0 +1,80 @@
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    background-color: #2c3e50;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1,
+header p,
+header p strong,
+header a {
+    color: #ffffff;
+}
+
+header a:hover {
+    color: #f1c40f;
+}
+
+
+/* ===== MAIN CONTENT ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6f7;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 18px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    color: #7f8c8d;
+}
