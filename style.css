@@ -5,6 +5,10 @@ header {
     padding: 25px;
     border-radius: 8px;
     margin-bottom: 20px;
+
+    /* NEW - Animation */
+    animation: slideDown 0.8s ease-out;
+
 }
 
 header h1,
@@ -27,10 +31,25 @@ body {
     padding: 0;
 }
 
+header h1 {
+    font-size: 32px;
+}
+select {
+    padding: 20px;
+}
+
 main {
     width: 80%;
     margin: 20px auto;
     line-height: 1.6;
+
+    /* New - Flexbox Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    /* NEW - Animation */
+    animation: fadeIn 1s ease-in;
 }
 
 section {
@@ -39,6 +58,9 @@ section {
     margin-bottom: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    /* NEW - Transition */
+    transition: padding 0.3s ease, transform 0.3s ease;
 }
 
 section h2 {
@@ -68,6 +90,65 @@ table th {
 
 table tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* MOBILE STYLES */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+    section {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* TABLET STYLES */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    section {
+        padding: 18px;
+        width: 48%;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+@media (min-width: 1025px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    section {
+        width: 48%;
+    }
 }
 
 
